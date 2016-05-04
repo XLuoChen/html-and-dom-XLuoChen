@@ -2,9 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>UML统一建模语言试题1</title>
+    <style>
+        #center {
+            background-color: grey;
+            TEXT-ALIGN: center;
+        }
+        .text {
+            border-bottom: #666 1px solid;
+            border-left-width:0;
+            border-right-width:0;
+            border-top-width:0;}
+    </style>
 </head>
 <body>
+<small>西安软件服务外包学院</small>
+<hr/>
+<div id="center"><h1>统一建模语言理论测试</h1></div>
+<form>
+    <label>考试科目：<input class="margin1,text" name="考试科目" value="统一建模语言UML" readonly="readonly"/></label>
+    <label>时间：<input class="margin1,text" name="时间" value="100分钟" readonly="readonly"/></label>
+    <label>得分：<input class="text" name="得分" id="得分" readonly="readonly"/></label>
+    <br />
+    <label>班级：<input class="margin1,text" id="class" type="text" name="班级"> </label>
+    <label>学号：<input class="margin1,text" id="sno" type="text" name="学号"> </label>
+    <label>姓名：<input class="margin1,text" id="name" type="text" name="姓名"> </label>
+    <br />
+</form>
+<article id="填空题">
+    <header>
+        <h2>一、填空题（共30分，每空1分）</h2>
+    </header>
+    <section>
+        1. UML 的中文全称是:
+        <input class="text" type="text" id="fillOne">
+    </section>
+    <section>
+        2. 对象最突出的特征是:
+        <input class="text" type="text" id="fillTwo">、
+        <input class="text" type="text" id="fillThree">、
+        <input class="text" type="text" id="fillFour">
+    </section>
+</article>
+
+<article>
+    <header>
+        <h2>二、选择题（每题2分，共20分）</h2>
+    </header>
+    <section>
+        <p> 1.UML 与软件工程的关系是:</p>
+        <form>
+            <input  type="radio" name="select" value="A"/> UML 就是软件工程
+            <br />
+            <input type="radio" name="select" value="B" id="no1correctAnswer"/> UML 参与到软件工程中软件开发过程的几个阶段
+            <br />
+            <input type="radio" name="select" value="C"/> UML 与软件工程无关
+            <br />
+            <input type="radio" name="select" value="D"/> UML 是软件工程的一部分
+        </form>
+    </section>
+    <section>
+        <p> 2.Java 语言支持:</p>
+        <form>
+            <input  type="radio" name="select" value="A" id="no2correctAnswer"/> 单继承
+            <br />
+            <input type="radio" name="select" value="B"/> 多继承
+            <br />
+            <input type="radio" name="select" value="C"/> 单继承和多继承都支持
+            <br />
+            <input type="radio" name="select" value="D"/> 单继承和多继承都不支持
+        </form>
+    </section>
+</article>
+
+<article>
+    <header>
+        <h2>三、多选题（每题2分，共20分）</h2>
+    </header>
+    <section>
+        <p> 1. 用例的粒度分为以下哪三种</p>
+        <form>
+            <input  type="checkbox" name="A" id="mutipleOne_1"/> 概述级
+            <br />
+            <input type="checkbox" name="B" id="mutipleOne_2"/> 需求级
+            <br />
+            <input type="checkbox" name="C" id="falseAnswer1"/> 用户目标级
+            <br />
+            <input type="checkbox" name="D" id="mutipleOne_3"/> 子功能级
+        </form>
+    </section>
+    <section>
+        <p> 2. 类图由以下哪三部分组成</p>
+        <form>
+            <input  type="checkbox" name="A" id="mutipleTwo_1"/> 名称(Name)
+            <br />
+            <input type="checkbox" name="B" id="mutipleTwo_2"/> 属性(Attribute)
+            <br />
+            <input type="checkbox" name="C" id="mutipleTwo_3"/> 操作(Operation)
+            <br />
+            <input type="checkbox" name="D" id="falseAnswer2"/> 方法(Function)
+        </form>
+    </section>
+</article>
+
+<article>
+    <header>
+        <h2>四、判断题 （每题2分，共20分）</h2>
+    </header>
+    <section>
+        1. 用例图只是用于和客户交流和沟通的,用于确定需求。
+        <form>
+            <input type="radio" name="select"/> 正确
+            <input type="radio" name="select" id="correctAnswer1"/> 错误
+        </form>
+    </section>
+    <section>
+        2. 在状态图中,终止状态在一个状态图中允许有任意多个。
+        <form>
+            <input  type="radio" name="select" id="correctAnswer2"/> 正确
+            <input type="radio" name="select"/> 错误
+        </form>
+    </section>
+</article>
+
+<article>
+    <header>
+        <h2>五 、简 答 题 ( 共 20 分 )</h2>
+    </header>
+    <section>
+        <p> 1. 简述什么是模型以及模型的表现形式?</p>
+        <form id="textareaDem" action="#" method="post">
+            <textarea cols="50" rows="10" id="contactus" name="contactus"></textarea>
+        </form>
+    </section>
+</article>
+<input type="button" name="submit" value="交卷" id="submit" />
+<script type="text/javascript" src="html-and-dom-dataProcess.js"></script>
 
 </body>
 </html>
