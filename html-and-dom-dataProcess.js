@@ -140,6 +140,5 @@ function buildtotalGrade() {
 }
 
 function setGrade(totalGrade) {
-    returnElementById('得分').style = 'color:red;font-size:25px';
     returnElementById('得分').value = totalGrade;
 }
