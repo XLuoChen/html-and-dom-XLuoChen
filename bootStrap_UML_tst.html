@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UML统一建模语言试题1</title>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+    <!--<link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet" />-->
+</head>
+<body>
+<small class="text-muted">西安软件服务外包学院</small>
+<hr/>
+<div class="bg-info" style="background-color:gray"><h2 class="text-center">统一建模语言理论测试</h2></div>
+<br />
+<form class="form-inline">
+    <label>考试科目：<input name="考试科目" value="统一建模语言UML" readonly="readonly"/></label>
+    <label>时间：<input name="时间" value="100分钟" readonly="readonly"/></label>
+    <label>得分：<input name="得分" id="得分" readonly="readonly"/></label>
+    <br />
+    <label>班级：<input id="class" type="text" name="班级"> </label>
+    <label>学号：<input id="sno" type="text" name="学号"> </label>
+    <label>姓名：<input id="name" type="text" name="姓名"> </label>
+</form>
+<article id="填空题">
+    <header>
+        <h3>一、填空题（共30分，每空1分）</h3>
+    </header>
+    <section class="input-group input-group-lg">
+        1. UML 的中文全称是:
+        <input type="text" id="fillOne">
+    </section>
+    <section class="input-group input-group-lg">
+        2. 对象最突出的特征是:
+        <input type="text" id="fillTwo">、
+        <input type="text" id="fillThree">、
+        <input type="text" id="fillFour">
+    </section>
+</article>
+
+<article>
+    <header>
+        <h3>二、选择题（每题2分，共20分）</h3>
+    </header>
+    <section>
+        <form role="form">
+        <p> 1.UML 与软件工程的关系是:</p>
+        <div class="radio">
+            <label class="radio">
+            <input  type="radio" name="select" value="A"/> UML 就是软件工程
+            <br />
+            <input type="radio" name="select" value="B" id="no1correctAnswer"/> UML 参与到软件工程中软件开发过程的几个阶段
+            <br />
+            <input type="radio" name="select" value="C"/> UML 与软件工程无关
+            <br />
+            <input type="radio" name="select" value="D"/> UML 是软件工程的一部分
+            </label>
+        </div>
+        </form>
+    </section>
+    <section>
+        <form role="form">
+        <p> 2.Java 语言支持:</p>
+        <div class="radio">
+            <label class="radio">
+            <input  type="radio" name="select" value="A" id="no2correctAnswer"/> 单继承
+            <br />
+            <input type="radio" name="select" value="B"/> 多继承
+            <br />
+            <input type="radio" name="select" value="C"/> 单继承和多继承都支持
+            <br />
+            <input type="radio" name="select" value="D"/> 单继承和多继承都不支持
+            </label>
+        </div>
+        </form>
+    </section>
+</article>
+
+<article>
+    <header>
+        <h3>三、多选题（每题2分，共20分）</h3>
+    </header>
+    <form role="form">
+    <section>
+        <p> 1. 用例的粒度分为以下哪三种</p>
+        <div class="checkbox">
+            <label class="checkbox">
+            <input  type="checkbox" name="A" id="mutipleOne_1"/> 概述级
+            <br />
+            <input type="checkbox" name="B" id="mutipleOne_2"/> 需求级
+            <br />
+            <input type="checkbox" name="C" id="falseAnswer1"/> 用户目标级
+            <br />
+            <input type="checkbox" name="D" id="mutipleOne_3"/> 子功能级
+            </label>
+        </div>
+    </section>
+    <section>
+        <p> 2. 类图由以下哪三部分组成</p>
+        <div class="checkbox">
+            <label class="checkbox">
+            <input  type="checkbox" name="A" id="mutipleTwo_1"/> 名称(Name)
+            <br />
+            <input type="checkbox" name="B" id="mutipleTwo_2"/> 属性(Attribute)
+            <br />
+            <input type="checkbox" name="C" id="mutipleTwo_3"/> 操作(Operation)
+            <br />
+            <input type="checkbox" name="D" id="falseAnswer2"/> 方法(Function)
+            </label>
+        </div>
+    </section>
+    </form>
+</article>
+
+<article>
+    <header>
+        <h3>四、判断题 （每题2分，共20分）</h3>
+    </header>
+    <section>
+        1. 用例图只是用于和客户交流和沟通的,用于确定需求。
+        <form>
+            <label class="checkbox inline">
+            <input type="radio" name="select"/> 正确
+            <input type="radio" name="select" id="correctAnswer1"/> 错误
+            </label>
+        </form>
+    </section>
+    <section>
+        2. 在状态图中,终止状态在一个状态图中允许有任意多个。
+        <form>
+            <label class="checkbox inline">
+            <input  type="radio" name="select" id="correctAnswer2"/> 正确
+            <input type="radio" name="select"/> 错误
+            </label>
+        </form>
+    </section>
+</article>
+
+<article>
+    <header>
+        <h3>五 、简 答 题 ( 共 20 分 )</h3>
+    </header>
+    <section>
+        <p> 1. 简述什么是模型以及模型的表现形式?</p>
+        <form id="textareaDem" action="#" method="post">
+            <div class="form-group">
+                <textarea class="form-control" rows="6" cols="30"></textarea>
+            </div>
+        </form>
+    </section>
+</article>
+<input type="button" class="btn btn-primary"  name="submit" value="交卷" id="submit" />
+<script type="text/javascript" src="html-and-dom-dataProcess.js"></script>
+
+</body>
+</html>
