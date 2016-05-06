@@ -1,7 +1,7 @@
 window.onload = function() {
     var button = document.getElementById("submit");
 
-    button.onclick = function () {
+    button.onclick = function() {
         printGrade();
     }
 };
@@ -141,4 +141,6 @@ function buildtotalGrade() {
 
 function setGrade(totalGrade) {
     returnElementById('得分').value = totalGrade;
+    returnElementById('得分').style = 'color:red;font-size:30px';
+    document.getElementById("submit").disabled = true;
 }
