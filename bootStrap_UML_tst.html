@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>UML统一建模语言试题1</title>
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
-    <!--<link href="css/awesome-bootstrap-checkbox.css" rel="stylesheet" />-->
 </head>
+
 <body>
 <small class="text-muted">西安软件服务外包学院</small>
 <hr/>
 <div class="bg-info" style="background-color:gray"><h2 class="text-center">统一建模语言理论测试</h2></div>
 <br />
+<header>
 <form class="form-inline">
     <label>考试科目：<input name="考试科目" value="统一建模语言UML" readonly="readonly"/></label>
     <label>时间：<input name="时间" value="100分钟" readonly="readonly"/></label>
@@ -20,23 +21,29 @@
     <label>学号：<input id="sno" type="text" name="学号"> </label>
     <label>姓名：<input id="name" type="text" name="姓名"> </label>
 </form>
-<article id="填空题">
+</header>
+
+<section id="填空题">
     <header>
         <h3>一、填空题（共30分，每空1分）</h3>
     </header>
     <section class="input-group input-group-lg">
+        <label>
         1. UML 的中文全称是:
         <input type="text" id="fillOne">
+        </label>
     </section>
     <section class="input-group input-group-lg">
+        <label>
         2. 对象最突出的特征是:
         <input type="text" id="fillTwo">、
         <input type="text" id="fillThree">、
         <input type="text" id="fillFour">
+        </label>
     </section>
-</article>
+</section>
 
-<article>
+<section>
     <header>
         <h3>二、选择题（每题2分，共20分）</h3>
     </header>
@@ -72,9 +79,9 @@
         </div>
         </form>
     </section>
-</article>
+</section>
 
-<article>
+<section>
     <header>
         <h3>三、多选题（每题2分，共20分）</h3>
     </header>
@@ -108,9 +115,9 @@
         </div>
     </section>
     </form>
-</article>
+</section>
 
-<article>
+<section>
     <header>
         <h3>四、判断题 （每题2分，共20分）</h3>
     </header>
@@ -132,23 +139,23 @@
             </label>
         </form>
     </section>
-</article>
+</section>
 
-<article>
+<section>
     <header>
         <h3>五 、简 答 题 ( 共 20 分 )</h3>
     </header>
     <section>
         <p> 1. 简述什么是模型以及模型的表现形式?</p>
-        <form id="textareaDem" action="#" method="post">
             <div class="form-group">
-                <textarea class="form-control" rows="6" cols="30"></textarea>
+            <label><textarea class="form-control" rows="6" cols="30"></textarea></label>
             </div>
-        </form>
     </section>
-</article>
-<input type="button" class="btn btn-primary"  name="submit" value="交卷" id="submit" />
-<script type="text/javascript" src="html-and-dom-dataProcess.js"></script>
+</section>
+<footer>
+<input type="button" class="btn btn-primary"  name="submit" value="我要交卷" id="submit" />
+</footer>
 
+<script type="text/javascript" src="html-and-dom-dataProcess.js"></script>
 </body>
 </html>
