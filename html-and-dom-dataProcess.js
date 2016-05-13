@@ -4,7 +4,7 @@ window.onload = function() {
     button.onclick = function() {
         printGrade();
     }
-};
+}
 
 function printGrade() {
     if(hasSignedStudnetInfo()) {
@@ -64,14 +64,14 @@ function caculateSingleChoiceGrade() {
 function caculateMultipleChoice1Grade() {
     var mutipletChioce1Grade = 0;
 
-     if(returnElementById('mutipleOne_1').checked &&
+    if(returnElementById('falseAnswer1').checked){
+        mutipletChioce1Grade = 0;
+    }
+    else if(returnElementById('mutipleOne_1').checked &&
         returnElementById('mutipleOne_2').checked &&
         returnElementById('mutipleOne_3').checked){
 
         mutipletChioce1Grade = 2;
-    }
-    else if(returnElementById('falseAnswer1').checked){
-        mutipletChioce1Grade = 0;
     }
     else if(returnElementById('mutipleOne_1').checked ||
         returnElementById('mutipleOne_2').checked ||
@@ -80,28 +80,26 @@ function caculateMultipleChoice1Grade() {
         mutipletChioce1Grade = 1;
     }
 
-
     return mutipletChioce1Grade;
 }
 
 function caculateMultipleChoice2Grade() {
     var mutipletChioce2Grade = 0;
 
-    if(returnElementById('mutipleTwo_1').checked &&
+    if(returnElementById('falseAnswer2').checked){
+        mutipletChioce2Grade = 0;
+    }
+    else if(returnElementById('mutipleTwo_1').checked &&
         returnElementById('mutipleTwo_2').checked &&
         returnElementById('mutipleTwo_3').checked){
 
         mutipletChioce2Grade = 2;
-    }
-    else if(returnElementById('falseAnswer2').checked){
-        mutipletChioce2Grade = 0;
     }
     else if(returnElementById('mutipleTwo_1').checked ||
         returnElementById('mutipleTwo_2').checked ||
         returnElementById('mutipleTwo_3').checked){
         mutipletChioce2Grade = 1;
     }
-
 
     return mutipletChioce2Grade;
 }
@@ -126,6 +124,17 @@ function caculateJudgmentGrade() {
     return judgmentGrade;
 }
 
+function caculateShortAnswer() {
+    var shortAnswerGrade = 0;
+    var correctAnswer = '模型是为了理解事物而对事物做出的一种抽象。是对事物规范化的、无歧义描述的一种工具';
+
+    if(returnElementById('shortText').value === correctAnswer){
+        shortAnswerGrade += 5;
+    }
+
+    return shortAnswerGrade
+}
+
 function buildtotalGrade() {
     var totalGrade = 0;
 
@@ -133,8 +142,8 @@ function buildtotalGrade() {
     var singleChoiceGrade = caculateSingleChoiceGrade();
     var multipleChoiceGrade = caculateMultipleChoiceGrade();
     var judgmentGrade = caculateJudgmentGrade();
-
-    totalGrade += fillBlankGrade + singleChoiceGrade + multipleChoiceGrade + judgmentGrade;
+    var shortTextGrade = caculateShortAnswer();
+    totalGrade += fillBlankGrade + singleChoiceGrade + multipleChoiceGrade + judgmentGrade + shortTextGrade;
 
     return totalGrade;
 }
